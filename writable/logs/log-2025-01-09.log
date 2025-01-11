@@ -1,0 +1,14 @@
+CRITICAL - 2025-01-09 11:44:30 --> foreach() argument must be of type array|object, null given
+#0 C:\xampp0\htdocs\cafe-PUM1\app\Controllers\Antrian.php(93): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argum...', 'C:\\xampp0\\htdoc...', 93)
+#1 C:\xampp0\htdocs\cafe-PUM1\system\CodeIgniter.php(824): App\Controllers\Antrian->simpanAntrian()
+#2 C:\xampp0\htdocs\cafe-PUM1\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Antrian))
+#3 C:\xampp0\htdocs\cafe-PUM1\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp0\htdocs\cafe-PUM1\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2025-01-09 12:44:08 --> foreach() argument must be of type array|object, null given
+#0 C:\xampp0\htdocs\cafe-PUM1\app\Controllers\Antrian.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argum...', 'C:\\xampp0\\htdoc...', 73)
+#1 C:\xampp0\htdocs\cafe-PUM1\system\CodeIgniter.php(824): App\Controllers\Antrian->simpanAntrian()
+#2 C:\xampp0\htdocs\cafe-PUM1\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Antrian))
+#3 C:\xampp0\htdocs\cafe-PUM1\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp0\htdocs\cafe-PUM1\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

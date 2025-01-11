@@ -1,0 +1,50 @@
+CRITICAL - 2025-01-10 01:34:24 --> Undefined property: App\Controllers\Antrian::$transaksiModel
+#0 C:\xampp0\htdocs\cafe-PUM1\app\Controllers\Antrian.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp0\\htdoc...', 53)
+#1 C:\xampp0\htdocs\cafe-PUM1\system\CodeIgniter.php(824): App\Controllers\Antrian->rincianPesanan()
+#2 C:\xampp0\htdocs\cafe-PUM1\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Antrian))
+#3 C:\xampp0\htdocs\cafe-PUM1\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp0\htdocs\cafe-PUM1\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2025-01-10 01:35:00 --> Undefined property: App\Controllers\Antrian::$transaksiModel
+#0 C:\xampp0\htdocs\cafe-PUM1\app\Controllers\Antrian.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp0\\htdoc...', 53)
+#1 C:\xampp0\htdocs\cafe-PUM1\system\CodeIgniter.php(824): App\Controllers\Antrian->rincianPesanan()
+#2 C:\xampp0\htdocs\cafe-PUM1\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Antrian))
+#3 C:\xampp0\htdocs\cafe-PUM1\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp0\htdocs\cafe-PUM1\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2025-01-10 01:42:46 --> Creation of dynamic property App\Controllers\Antrian::$antrianModel is deprecated
+#0 C:\xampp0\htdocs\cafe-PUM1\app\Controllers\Antrian.php(14): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Creation of dyn...', 'C:\\xampp0\\htdoc...', 14)
+#1 C:\xampp0\htdocs\cafe-PUM1\system\CodeIgniter.php(801): App\Controllers\Antrian->__construct()
+#2 C:\xampp0\htdocs\cafe-PUM1\system\CodeIgniter.php(401): CodeIgniter\CodeIgniter->createController()
+#3 C:\xampp0\htdocs\cafe-PUM1\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp0\htdocs\cafe-PUM1\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2025-01-10 01:43:41 --> Creation of dynamic property App\Controllers\Antrian::$transaksiModel is deprecated
+#0 C:\xampp0\htdocs\cafe-PUM1\app\Controllers\Antrian.php(14): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Creation of dyn...', 'C:\\xampp0\\htdoc...', 14)
+#1 C:\xampp0\htdocs\cafe-PUM1\system\CodeIgniter.php(801): App\Controllers\Antrian->__construct()
+#2 C:\xampp0\htdocs\cafe-PUM1\system\CodeIgniter.php(401): CodeIgniter\CodeIgniter->createController()
+#3 C:\xampp0\htdocs\cafe-PUM1\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp0\htdocs\cafe-PUM1\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2025-01-10 01:44:08 --> Class "App\Controllers\TransaksiModel" not found
+#0 C:\xampp0\htdocs\cafe-PUM1\system\CodeIgniter.php(801): App\Controllers\Antrian->__construct()
+#1 C:\xampp0\htdocs\cafe-PUM1\system\CodeIgniter.php(401): CodeIgniter\CodeIgniter->createController()
+#2 C:\xampp0\htdocs\cafe-PUM1\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp0\htdocs\cafe-PUM1\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2025-01-10 01:45:16 --> Creation of dynamic property App\Controllers\Antrian::$transaksiModel is deprecated
+#0 C:\xampp0\htdocs\cafe-PUM1\app\Controllers\Antrian.php(16): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Creation of dyn...', 'C:\\xampp0\\htdoc...', 16)
+#1 C:\xampp0\htdocs\cafe-PUM1\system\CodeIgniter.php(801): App\Controllers\Antrian->__construct()
+#2 C:\xampp0\htdocs\cafe-PUM1\system\CodeIgniter.php(401): CodeIgniter\CodeIgniter->createController()
+#3 C:\xampp0\htdocs\cafe-PUM1\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp0\htdocs\cafe-PUM1\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2025-01-10 01:57:37 --> Undefined variable $totalTime
+#0 C:\xampp0\htdocs\cafe-PUM1\system\Debug\Toolbar\Views\toolbar.tpl.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp0\\htdoc...', 40)
+#1 C:\xampp0\htdocs\cafe-PUM1\system\Debug\Toolbar.php(497): include('C:\\xampp0\\htdoc...')
+#2 C:\xampp0\htdocs\cafe-PUM1\system\Debug\Toolbar.php(460): CodeIgniter\Debug\Toolbar->format(Array, 'html')
+#3 C:\xampp0\htdocs\cafe-PUM1\app\Config\Events.php(48): CodeIgniter\Debug\Toolbar->respond()
+#4 C:\xampp0\htdocs\cafe-PUM1\system\Events\Events.php(149): CodeIgniter\Events\Events::Config\{closure}()
+#5 C:\xampp0\htdocs\cafe-PUM1\system\CodeIgniter.php(300): CodeIgniter\Events\Events::trigger('pre_system')
+#6 C:\xampp0\htdocs\cafe-PUM1\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}

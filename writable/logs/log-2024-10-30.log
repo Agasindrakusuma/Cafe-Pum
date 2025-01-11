@@ -1,0 +1,553 @@
+CRITICAL - 2024-10-30 02:00:01 --> Creation of dynamic property App\Controllers\Dashboard::$menuModel is deprecated
+#0 C:\xampp0\htdocs\cafe-PUM\app\Controllers\Dashboard.php(14): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Creation of dyn...', 'C:\\xampp0\\htdoc...', 14)
+#1 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(801): App\Controllers\Dashboard->__construct()
+#2 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(401): CodeIgniter\CodeIgniter->createController()
+#3 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp0\htdocs\cafe-PUM\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2024-10-30 02:27:56 --> Error connecting to the database: Access denied for user '****'@'localhost' (using password: YES)
+CRITICAL - 2024-10-30 02:27:56 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+#0 C:\xampp0\htdocs\cafe-PUM\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp0\htdocs\cafe-PUM\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp0\htdocs\cafe-PUM\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp0\htdocs\cafe-PUM\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#4 C:\xampp0\htdocs\cafe-PUM\app\Controllers\Dashboard.php(29): CodeIgniter\BaseModel->findAll()
+#5 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(824): App\Controllers\Dashboard->index()
+#6 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#7 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp0\htdocs\cafe-PUM\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2024-10-30 02:30:23 --> Error connecting to the database: Access denied for user '****'@'10.0.2.2' (using password: NO)
+CRITICAL - 2024-10-30 02:30:23 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'10.0.2.2' (using password: NO)
+#0 C:\xampp0\htdocs\cafe-PUM\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp0\htdocs\cafe-PUM\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp0\htdocs\cafe-PUM\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp0\htdocs\cafe-PUM\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#4 C:\xampp0\htdocs\cafe-PUM\app\Controllers\Dashboard.php(29): CodeIgniter\BaseModel->findAll()
+#5 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(824): App\Controllers\Dashboard->index()
+#6 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#7 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp0\htdocs\cafe-PUM\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-10-30 03:04:32 --> cors filter must have a matching alias defined.
+#0 C:\xampp0\htdocs\cafe-PUM\system\Filters\Filters.php(496): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('cors')
+#1 C:\xampp0\htdocs\cafe-PUM\system\Filters\Filters.php(243): CodeIgniter\Filters\Filters->processAliasesToClass('before')
+#2 C:\xampp0\htdocs\cafe-PUM\system\Filters\Filters.php(163): CodeIgniter\Filters\Filters->initialize('/')
+#3 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(384): CodeIgniter\Filters\Filters->run('/', 'before')
+#4 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp0\htdocs\cafe-PUM\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp0\htdocs\cafe-PUM\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp0\\htdoc...')
+#7 {main}
+CRITICAL - 2024-10-30 03:04:33 --> cors filter must have a matching alias defined.
+#0 C:\xampp0\htdocs\cafe-PUM\system\Filters\Filters.php(496): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('cors')
+#1 C:\xampp0\htdocs\cafe-PUM\system\Filters\Filters.php(243): CodeIgniter\Filters\Filters->processAliasesToClass('before')
+#2 C:\xampp0\htdocs\cafe-PUM\system\Filters\Filters.php(163): CodeIgniter\Filters\Filters->initialize('/')
+#3 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(384): CodeIgniter\Filters\Filters->run('/', 'before')
+#4 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp0\htdocs\cafe-PUM\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp0\htdocs\cafe-PUM\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp0\\htdoc...')
+#7 {main}
+CRITICAL - 2024-10-30 03:04:34 --> cors filter must have a matching alias defined.
+#0 C:\xampp0\htdocs\cafe-PUM\system\Filters\Filters.php(496): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('cors')
+#1 C:\xampp0\htdocs\cafe-PUM\system\Filters\Filters.php(243): CodeIgniter\Filters\Filters->processAliasesToClass('before')
+#2 C:\xampp0\htdocs\cafe-PUM\system\Filters\Filters.php(163): CodeIgniter\Filters\Filters->initialize('/')
+#3 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(384): CodeIgniter\Filters\Filters->run('/', 'before')
+#4 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp0\htdocs\cafe-PUM\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp0\htdocs\cafe-PUM\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp0\\htdoc...')
+#7 {main}
+ERROR - 2024-10-30 03:08:36 --> Error mendapatkan Snap Token: json_decode(): Passing null to parameter #1 ($json) of type string is deprecated
+ERROR - 2024-10-30 03:08:39 --> Error mendapatkan Snap Token: json_decode(): Passing null to parameter #1 ($json) of type string is deprecated
+CRITICAL - 2024-10-30 03:13:04 --> Creation of dynamic property App\Controllers\Antrian::$menuModel is deprecated
+#0 C:\xampp0\htdocs\cafe-PUM\app\Controllers\Antrian.php(13): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Creation of dyn...', 'C:\\xampp0\\htdoc...', 13)
+#1 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(801): App\Controllers\Antrian->__construct()
+#2 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(401): CodeIgniter\CodeIgniter->createController()
+#3 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp0\htdocs\cafe-PUM\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-10-30 03:14:40 --> Creation of dynamic property App\Controllers\User::$userModel is deprecated
+#0 C:\xampp0\htdocs\cafe-PUM\app\Controllers\User.php(11): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Creation of dyn...', 'C:\\xampp0\\htdoc...', 11)
+#1 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(801): App\Controllers\User->__construct()
+#2 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(401): CodeIgniter\CodeIgniter->createController()
+#3 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp0\htdocs\cafe-PUM\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-10-30 03:15:09 --> Creation of dynamic property App\Controllers\Laporan::$transaksiModel is deprecated
+#0 C:\xampp0\htdocs\cafe-PUM\app\Controllers\Laporan.php(14): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Creation of dyn...', 'C:\\xampp0\\htdoc...', 14)
+#1 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(801): App\Controllers\Laporan->__construct()
+#2 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(401): CodeIgniter\CodeIgniter->createController()
+#3 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp0\htdocs\cafe-PUM\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-10-30 03:15:16 --> Creation of dynamic property App\Controllers\Laporan::$pembelianModel is deprecated
+#0 C:\xampp0\htdocs\cafe-PUM\app\Controllers\Laporan.php(21): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Creation of dyn...', 'C:\\xampp0\\htdoc...', 21)
+#1 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(801): App\Controllers\Laporan->__construct()
+#2 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(401): CodeIgniter\CodeIgniter->createController()
+#3 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp0\htdocs\cafe-PUM\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2024-10-30 03:33:48 --> Error mendapatkan Snap Token: json_decode(): Passing null to parameter #1 ($json) of type string is deprecated
+ERROR - 2024-10-30 03:34:06 --> Error mendapatkan Snap Token: json_decode(): Passing null to parameter #1 ($json) of type string is deprecated
+ERROR - 2024-10-30 03:34:12 --> Error mendapatkan Snap Token: json_decode(): Passing null to parameter #1 ($json) of type string is deprecated
+ERROR - 2024-10-30 03:34:32 --> Error mendapatkan Snap Token: json_decode(): Passing null to parameter #1 ($json) of type string is deprecated
+ERROR - 2024-10-30 03:34:37 --> Error mendapatkan Snap Token: json_decode(): Passing null to parameter #1 ($json) of type string is deprecated
+CRITICAL - 2024-10-30 10:13:11 --> Invalid file: about_us.php
+#0 C:\xampp0\htdocs\cafe-PUM\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('about_us.php')
+#1 C:\xampp0\htdocs\cafe-PUM\system\Common.php(1097): CodeIgniter\View\View->render('about_us', Array, true)
+#2 C:\xampp0\htdocs\cafe-PUM\app\Controllers\Dashboard.php(28): view('about_us')
+#3 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(824): App\Controllers\Dashboard->index()
+#4 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#5 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp0\htdocs\cafe-PUM\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2024-10-30 10:14:24 --> Undefined variable $kopi
+#0 C:\xampp0\htdocs\cafe-PUM\app\Views\dashboard.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp0\\htdoc...', 61)
+#1 C:\xampp0\htdocs\cafe-PUM\system\View\View.php(214): include('C:\\xampp0\\htdoc...')
+#2 C:\xampp0\htdocs\cafe-PUM\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp0\htdocs\cafe-PUM\system\Common.php(1097): CodeIgniter\View\View->render('dashboard', Array, true)
+#4 C:\xampp0\htdocs\cafe-PUM\app\Controllers\Dashboard.php(28): view('dashboard')
+#5 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(824): App\Controllers\Dashboard->index()
+#6 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#7 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp0\htdocs\cafe-PUM\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-10-30 10:14:25 --> Undefined variable $kopi
+#0 C:\xampp0\htdocs\cafe-PUM\app\Views\dashboard.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp0\\htdoc...', 61)
+#1 C:\xampp0\htdocs\cafe-PUM\system\View\View.php(214): include('C:\\xampp0\\htdoc...')
+#2 C:\xampp0\htdocs\cafe-PUM\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp0\htdocs\cafe-PUM\system\Common.php(1097): CodeIgniter\View\View->render('dashboard', Array, true)
+#4 C:\xampp0\htdocs\cafe-PUM\app\Controllers\Dashboard.php(28): view('dashboard')
+#5 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(824): App\Controllers\Dashboard->index()
+#6 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#7 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp0\htdocs\cafe-PUM\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-10-30 10:32:06 --> Undefined variable $kopi
+#0 C:\xampp0\htdocs\cafe-PUM\app\Views\dashboard.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp0\\htdoc...', 61)
+#1 C:\xampp0\htdocs\cafe-PUM\system\View\View.php(214): include('C:\\xampp0\\htdoc...')
+#2 C:\xampp0\htdocs\cafe-PUM\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp0\htdocs\cafe-PUM\system\Common.php(1097): CodeIgniter\View\View->render('dashboard', Array, true)
+#4 C:\xampp0\htdocs\cafe-PUM\app\Controllers\Dashboard.php(28): view('dashboard')
+#5 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(824): App\Controllers\Dashboard->index()
+#6 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#7 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp0\htdocs\cafe-PUM\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-10-30 10:32:24 --> Undefined variable $kopi
+#0 C:\xampp0\htdocs\cafe-PUM\app\Views\dashboard.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp0\\htdoc...', 61)
+#1 C:\xampp0\htdocs\cafe-PUM\system\View\View.php(214): include('C:\\xampp0\\htdoc...')
+#2 C:\xampp0\htdocs\cafe-PUM\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp0\htdocs\cafe-PUM\system\Common.php(1097): CodeIgniter\View\View->render('dashboard', Array, true)
+#4 C:\xampp0\htdocs\cafe-PUM\app\Controllers\Dashboard.php(27): view('dashboard')
+#5 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(824): App\Controllers\Dashboard->index()
+#6 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#7 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp0\htdocs\cafe-PUM\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-10-30 10:32:41 --> Undefined variable $kopi
+#0 C:\xampp0\htdocs\cafe-PUM\app\Views\dashboard.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp0\\htdoc...', 61)
+#1 C:\xampp0\htdocs\cafe-PUM\system\View\View.php(214): include('C:\\xampp0\\htdoc...')
+#2 C:\xampp0\htdocs\cafe-PUM\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp0\htdocs\cafe-PUM\system\Common.php(1097): CodeIgniter\View\View->render('dashboard', Array, true)
+#4 C:\xampp0\htdocs\cafe-PUM\app\Controllers\Dashboard.php(27): view('dashboard')
+#5 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(824): App\Controllers\Dashboard->index()
+#6 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#7 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp0\htdocs\cafe-PUM\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-10-30 13:45:35 --> Invalid file: dashoard_info.php
+#0 C:\xampp0\htdocs\cafe-PUM\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dashoard_info.p...')
+#1 C:\xampp0\htdocs\cafe-PUM\system\Common.php(1097): CodeIgniter\View\View->render('dashoard_info', Array, true)
+#2 C:\xampp0\htdocs\cafe-PUM\app\Controllers\Dashboard.php(48): view('dashoard_info')
+#3 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(824): App\Controllers\Dashboard->index()
+#4 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#5 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp0\htdocs\cafe-PUM\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2024-10-30 13:45:37 --> Invalid file: dashoard_info.php
+#0 C:\xampp0\htdocs\cafe-PUM\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dashoard_info.p...')
+#1 C:\xampp0\htdocs\cafe-PUM\system\Common.php(1097): CodeIgniter\View\View->render('dashoard_info', Array, true)
+#2 C:\xampp0\htdocs\cafe-PUM\app\Controllers\Dashboard.php(48): view('dashoard_info')
+#3 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(824): App\Controllers\Dashboard->index()
+#4 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#5 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp0\htdocs\cafe-PUM\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2024-10-30 13:47:43 --> syntax error, unexpected token "public", expecting end of file
+#0 C:\xampp0\htdocs\cafe-PUM\system\Router\Router.php(176): CodeIgniter\Router\Router->autoRoute('dashboard/antri...')
+#1 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(718): CodeIgniter\Router\Router->handle('dashboard/antri...')
+#2 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(359): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp0\htdocs\cafe-PUM\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-10-30 13:49:25 --> syntax error, unexpected token "public"
+#0 C:\xampp0\htdocs\cafe-PUM\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp0\\htdoc...')
+#1 C:\xampp0\htdocs\cafe-PUM\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(789): class_exists('\\App\\Controller...', true)
+#4 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(397): CodeIgniter\CodeIgniter->startController()
+#5 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp0\htdocs\cafe-PUM\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2024-10-30 13:49:28 --> syntax error, unexpected token "public"
+#0 C:\xampp0\htdocs\cafe-PUM\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp0\\htdoc...')
+#1 C:\xampp0\htdocs\cafe-PUM\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(789): class_exists('\\App\\Controller...', true)
+#4 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(397): CodeIgniter\CodeIgniter->startController()
+#5 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp0\htdocs\cafe-PUM\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2024-10-30 13:54:16 --> Invalid file: antrian_view.php
+#0 C:\xampp0\htdocs\cafe-PUM\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('antrian_view.ph...')
+#1 C:\xampp0\htdocs\cafe-PUM\system\Common.php(1097): CodeIgniter\View\View->render('antrian_view', Array, true)
+#2 C:\xampp0\htdocs\cafe-PUM\app\Controllers\Dashboard.php(39): view('antrian_view', Array)
+#3 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(824): App\Controllers\Dashboard->antrian()
+#4 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#5 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp0\htdocs\cafe-PUM\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2024-10-30 13:59:13 --> Undefined variable $kopi
+#0 C:\xampp0\htdocs\cafe-PUM\app\Views\dashboard.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp0\\htdoc...', 61)
+#1 C:\xampp0\htdocs\cafe-PUM\system\View\View.php(214): include('C:\\xampp0\\htdoc...')
+#2 C:\xampp0\htdocs\cafe-PUM\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp0\htdocs\cafe-PUM\system\Common.php(1097): CodeIgniter\View\View->render('dashboard', Array, true)
+#4 C:\xampp0\htdocs\cafe-PUM\app\Controllers\Dashboard.php(20): view('dashboard')
+#5 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(824): App\Controllers\Dashboard->dashboard('logout')
+#6 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#7 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp0\htdocs\cafe-PUM\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-10-30 13:59:25 --> Undefined variable $kopi
+#0 C:\xampp0\htdocs\cafe-PUM\app\Views\dashboard.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp0\\htdoc...', 61)
+#1 C:\xampp0\htdocs\cafe-PUM\system\View\View.php(214): include('C:\\xampp0\\htdoc...')
+#2 C:\xampp0\htdocs\cafe-PUM\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp0\htdocs\cafe-PUM\system\Common.php(1097): CodeIgniter\View\View->render('dashboard', Array, true)
+#4 C:\xampp0\htdocs\cafe-PUM\app\Controllers\Dashboard.php(20): view('dashboard')
+#5 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(824): App\Controllers\Dashboard->dashboard('logout')
+#6 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#7 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp0\htdocs\cafe-PUM\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-10-30 14:00:15 --> Undefined variable $kopi
+#0 C:\xampp0\htdocs\cafe-PUM\app\Views\dashboard.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp0\\htdoc...', 61)
+#1 C:\xampp0\htdocs\cafe-PUM\system\View\View.php(214): include('C:\\xampp0\\htdoc...')
+#2 C:\xampp0\htdocs\cafe-PUM\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp0\htdocs\cafe-PUM\system\Common.php(1097): CodeIgniter\View\View->render('dashboard', Array, true)
+#4 C:\xampp0\htdocs\cafe-PUM\app\Controllers\Dashboard.php(20): view('dashboard')
+#5 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(824): App\Controllers\Dashboard->dashboard('logout')
+#6 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#7 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp0\htdocs\cafe-PUM\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-10-30 14:00:55 --> syntax error, unexpected token "return", expecting "function" or "const"
+#0 C:\xampp0\htdocs\cafe-PUM\system\Router\Router.php(176): CodeIgniter\Router\Router->autoRoute('dashboard/antri...')
+#1 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(718): CodeIgniter\Router\Router->handle('dashboard/antri...')
+#2 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(359): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp0\htdocs\cafe-PUM\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-10-30 14:01:28 --> file_get_contents(): Read of 8192 bytes failed with errno=13 Permission denied
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'file_get_conten...', 'C:\\xampp0\\htdoc...', 80)
+#1 C:\xampp0\htdocs\cafe-PUM\system\Debug\Toolbar\Collectors\History.php(80): file_get_contents('C:\\xampp0\\htdoc...')
+#2 C:\xampp0\htdocs\cafe-PUM\system\Debug\Toolbar.php(481): CodeIgniter\Debug\Toolbar\Collectors\History->setFiles(1730314888, 20)
+#3 C:\xampp0\htdocs\cafe-PUM\system\Debug\Toolbar.php(460): CodeIgniter\Debug\Toolbar->format(Array, 'html')
+#4 C:\xampp0\htdocs\cafe-PUM\app\Config\Events.php(48): CodeIgniter\Debug\Toolbar->respond()
+#5 C:\xampp0\htdocs\cafe-PUM\system\Events\Events.php(149): CodeIgniter\Events\Events::Config\{closure}()
+#6 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(300): CodeIgniter\Events\Events::trigger('pre_system')
+#7 C:\xampp0\htdocs\cafe-PUM\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-10-30 14:06:54 --> Undefined variable $kopi
+#0 C:\xampp0\htdocs\cafe-PUM\app\Views\dashboard.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp0\\htdoc...', 61)
+#1 C:\xampp0\htdocs\cafe-PUM\system\View\View.php(214): include('C:\\xampp0\\htdoc...')
+#2 C:\xampp0\htdocs\cafe-PUM\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp0\htdocs\cafe-PUM\system\Common.php(1097): CodeIgniter\View\View->render('dashboard', Array, true)
+#4 C:\xampp0\htdocs\cafe-PUM\app\Controllers\Dashboard.php(53): view('dashboard', Array)
+#5 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(824): App\Controllers\Dashboard->antrian()
+#6 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#7 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp0\htdocs\cafe-PUM\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-10-30 14:07:15 --> Undefined variable $kopi
+#0 C:\xampp0\htdocs\cafe-PUM\app\Views\dashboard.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp0\\htdoc...', 61)
+#1 C:\xampp0\htdocs\cafe-PUM\system\View\View.php(214): include('C:\\xampp0\\htdoc...')
+#2 C:\xampp0\htdocs\cafe-PUM\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp0\htdocs\cafe-PUM\system\Common.php(1097): CodeIgniter\View\View->render('dashboard', Array, true)
+#4 C:\xampp0\htdocs\cafe-PUM\app\Controllers\Dashboard.php(53): view('dashboard', Array)
+#5 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(824): App\Controllers\Dashboard->antrian()
+#6 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#7 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp0\htdocs\cafe-PUM\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-10-30 14:07:16 --> Undefined variable $kopi
+#0 C:\xampp0\htdocs\cafe-PUM\app\Views\dashboard.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp0\\htdoc...', 61)
+#1 C:\xampp0\htdocs\cafe-PUM\system\View\View.php(214): include('C:\\xampp0\\htdoc...')
+#2 C:\xampp0\htdocs\cafe-PUM\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp0\htdocs\cafe-PUM\system\Common.php(1097): CodeIgniter\View\View->render('dashboard', Array, true)
+#4 C:\xampp0\htdocs\cafe-PUM\app\Controllers\Dashboard.php(53): view('dashboard', Array)
+#5 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(824): App\Controllers\Dashboard->antrian()
+#6 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#7 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp0\htdocs\cafe-PUM\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-10-30 14:07:16 --> Undefined variable $kopi
+#0 C:\xampp0\htdocs\cafe-PUM\app\Views\dashboard.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp0\\htdoc...', 61)
+#1 C:\xampp0\htdocs\cafe-PUM\system\View\View.php(214): include('C:\\xampp0\\htdoc...')
+#2 C:\xampp0\htdocs\cafe-PUM\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp0\htdocs\cafe-PUM\system\Common.php(1097): CodeIgniter\View\View->render('dashboard', Array, true)
+#4 C:\xampp0\htdocs\cafe-PUM\app\Controllers\Dashboard.php(53): view('dashboard', Array)
+#5 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(824): App\Controllers\Dashboard->antrian()
+#6 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#7 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp0\htdocs\cafe-PUM\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-10-30 14:07:17 --> Undefined variable $kopi
+#0 C:\xampp0\htdocs\cafe-PUM\app\Views\dashboard.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp0\\htdoc...', 61)
+#1 C:\xampp0\htdocs\cafe-PUM\system\View\View.php(214): include('C:\\xampp0\\htdoc...')
+#2 C:\xampp0\htdocs\cafe-PUM\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp0\htdocs\cafe-PUM\system\Common.php(1097): CodeIgniter\View\View->render('dashboard', Array, true)
+#4 C:\xampp0\htdocs\cafe-PUM\app\Controllers\Dashboard.php(53): view('dashboard', Array)
+#5 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(824): App\Controllers\Dashboard->antrian()
+#6 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#7 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp0\htdocs\cafe-PUM\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-10-30 14:07:17 --> Undefined variable $kopi
+#0 C:\xampp0\htdocs\cafe-PUM\app\Views\dashboard.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp0\\htdoc...', 61)
+#1 C:\xampp0\htdocs\cafe-PUM\system\View\View.php(214): include('C:\\xampp0\\htdoc...')
+#2 C:\xampp0\htdocs\cafe-PUM\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp0\htdocs\cafe-PUM\system\Common.php(1097): CodeIgniter\View\View->render('dashboard', Array, true)
+#4 C:\xampp0\htdocs\cafe-PUM\app\Controllers\Dashboard.php(53): view('dashboard', Array)
+#5 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(824): App\Controllers\Dashboard->antrian()
+#6 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#7 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp0\htdocs\cafe-PUM\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-10-30 14:08:14 --> Undefined variable $kopi
+#0 C:\xampp0\htdocs\cafe-PUM\app\Views\dashboard.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp0\\htdoc...', 61)
+#1 C:\xampp0\htdocs\cafe-PUM\system\View\View.php(214): include('C:\\xampp0\\htdoc...')
+#2 C:\xampp0\htdocs\cafe-PUM\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp0\htdocs\cafe-PUM\system\Common.php(1097): CodeIgniter\View\View->render('dashboard', Array, true)
+#4 C:\xampp0\htdocs\cafe-PUM\app\Controllers\Dashboard.php(53): view('dashboard', Array)
+#5 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(824): App\Controllers\Dashboard->antrian()
+#6 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#7 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp0\htdocs\cafe-PUM\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-10-30 14:16:59 --> Undefined variable $kopi
+#0 C:\xampp0\htdocs\cafe-PUM\app\Views\dashboard.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp0\\htdoc...', 61)
+#1 C:\xampp0\htdocs\cafe-PUM\system\View\View.php(214): include('C:\\xampp0\\htdoc...')
+#2 C:\xampp0\htdocs\cafe-PUM\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp0\htdocs\cafe-PUM\system\Common.php(1097): CodeIgniter\View\View->render('dashboard', Array, true)
+#4 C:\xampp0\htdocs\cafe-PUM\app\Controllers\Dashboard.php(32): view('dashboard', Array)
+#5 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(824): App\Controllers\Dashboard->dashboard('logout')
+#6 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#7 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp0\htdocs\cafe-PUM\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-10-30 14:29:22 --> Undefined variable $nonKopi
+#0 C:\xampp0\htdocs\cafe-PUM\app\Views\dashboard.php(95): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp0\\htdoc...', 95)
+#1 C:\xampp0\htdocs\cafe-PUM\system\View\View.php(214): include('C:\\xampp0\\htdoc...')
+#2 C:\xampp0\htdocs\cafe-PUM\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp0\htdocs\cafe-PUM\system\Common.php(1097): CodeIgniter\View\View->render('dashboard', Array, true)
+#4 C:\xampp0\htdocs\cafe-PUM\app\Controllers\Dashboard.php(32): view('dashboard', Array)
+#5 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(824): App\Controllers\Dashboard->dashboard('logout')
+#6 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#7 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp0\htdocs\cafe-PUM\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-10-30 14:29:36 --> Undefined variable $nonKopi
+#0 C:\xampp0\htdocs\cafe-PUM\app\Views\dashboard.php(95): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp0\\htdoc...', 95)
+#1 C:\xampp0\htdocs\cafe-PUM\system\View\View.php(214): include('C:\\xampp0\\htdoc...')
+#2 C:\xampp0\htdocs\cafe-PUM\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp0\htdocs\cafe-PUM\system\Common.php(1097): CodeIgniter\View\View->render('dashboard', Array, true)
+#4 C:\xampp0\htdocs\cafe-PUM\app\Controllers\Dashboard.php(32): view('dashboard', Array)
+#5 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(824): App\Controllers\Dashboard->dashboard('logout')
+#6 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#7 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp0\htdocs\cafe-PUM\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-10-30 14:31:37 --> Undefined variable $nonKopi
+#0 C:\xampp0\htdocs\cafe-PUM\app\Views\dashboard.php(95): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp0\\htdoc...', 95)
+#1 C:\xampp0\htdocs\cafe-PUM\system\View\View.php(214): include('C:\\xampp0\\htdoc...')
+#2 C:\xampp0\htdocs\cafe-PUM\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp0\htdocs\cafe-PUM\system\Common.php(1097): CodeIgniter\View\View->render('dashboard', Array, true)
+#4 C:\xampp0\htdocs\cafe-PUM\app\Controllers\Dashboard.php(32): view('dashboard', Array)
+#5 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(824): App\Controllers\Dashboard->dashboard('logout')
+#6 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#7 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp0\htdocs\cafe-PUM\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-10-30 14:36:17 --> Undefined variable $snack
+#0 C:\xampp0\htdocs\cafe-PUM\app\Views\dashboard.php(128): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp0\\htdoc...', 128)
+#1 C:\xampp0\htdocs\cafe-PUM\system\View\View.php(214): include('C:\\xampp0\\htdoc...')
+#2 C:\xampp0\htdocs\cafe-PUM\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp0\htdocs\cafe-PUM\system\Common.php(1097): CodeIgniter\View\View->render('dashboard', Array, true)
+#4 C:\xampp0\htdocs\cafe-PUM\app\Controllers\Dashboard.php(32): view('dashboard', Array)
+#5 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(824): App\Controllers\Dashboard->dashboard('logout')
+#6 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#7 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp0\htdocs\cafe-PUM\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-10-30 14:36:19 --> Undefined variable $snack
+#0 C:\xampp0\htdocs\cafe-PUM\app\Views\dashboard.php(128): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp0\\htdoc...', 128)
+#1 C:\xampp0\htdocs\cafe-PUM\system\View\View.php(214): include('C:\\xampp0\\htdoc...')
+#2 C:\xampp0\htdocs\cafe-PUM\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp0\htdocs\cafe-PUM\system\Common.php(1097): CodeIgniter\View\View->render('dashboard', Array, true)
+#4 C:\xampp0\htdocs\cafe-PUM\app\Controllers\Dashboard.php(32): view('dashboard', Array)
+#5 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(824): App\Controllers\Dashboard->dashboard('logout')
+#6 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#7 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp0\htdocs\cafe-PUM\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-10-30 14:38:56 --> Undefined variable $snack
+#0 C:\xampp0\htdocs\cafe-PUM\app\Views\dashboard.php(124): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp0\\htdoc...', 124)
+#1 C:\xampp0\htdocs\cafe-PUM\system\View\View.php(214): include('C:\\xampp0\\htdoc...')
+#2 C:\xampp0\htdocs\cafe-PUM\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp0\htdocs\cafe-PUM\system\Common.php(1097): CodeIgniter\View\View->render('dashboard', Array, true)
+#4 C:\xampp0\htdocs\cafe-PUM\app\Controllers\Dashboard.php(32): view('dashboard', Array)
+#5 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(824): App\Controllers\Dashboard->dashboard('logout')
+#6 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#7 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp0\htdocs\cafe-PUM\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-10-30 14:38:58 --> Undefined variable $snack
+#0 C:\xampp0\htdocs\cafe-PUM\app\Views\dashboard.php(124): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp0\\htdoc...', 124)
+#1 C:\xampp0\htdocs\cafe-PUM\system\View\View.php(214): include('C:\\xampp0\\htdoc...')
+#2 C:\xampp0\htdocs\cafe-PUM\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp0\htdocs\cafe-PUM\system\Common.php(1097): CodeIgniter\View\View->render('dashboard', Array, true)
+#4 C:\xampp0\htdocs\cafe-PUM\app\Controllers\Dashboard.php(32): view('dashboard', Array)
+#5 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(824): App\Controllers\Dashboard->dashboard('logout')
+#6 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#7 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp0\htdocs\cafe-PUM\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-10-30 14:39:52 --> syntax error, unexpected end of file, expecting "elseif" or "else" or "endif"
+#0 C:\xampp0\htdocs\cafe-PUM\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\xampp0\htdocs\cafe-PUM\system\Common.php(1097): CodeIgniter\View\View->render('dashboard', Array, true)
+#2 C:\xampp0\htdocs\cafe-PUM\app\Controllers\Dashboard.php(32): view('dashboard', Array)
+#3 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(824): App\Controllers\Dashboard->dashboard('logout')
+#4 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#5 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp0\htdocs\cafe-PUM\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2024-10-30 14:40:04 --> Undefined variable $nonKopi
+#0 C:\xampp0\htdocs\cafe-PUM\app\Views\dashboard.php(96): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp0\\htdoc...', 96)
+#1 C:\xampp0\htdocs\cafe-PUM\system\View\View.php(214): include('C:\\xampp0\\htdoc...')
+#2 C:\xampp0\htdocs\cafe-PUM\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp0\htdocs\cafe-PUM\system\Common.php(1097): CodeIgniter\View\View->render('dashboard', Array, true)
+#4 C:\xampp0\htdocs\cafe-PUM\app\Controllers\Dashboard.php(32): view('dashboard', Array)
+#5 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(824): App\Controllers\Dashboard->dashboard('logout')
+#6 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#7 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp0\htdocs\cafe-PUM\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-10-30 14:40:09 --> Undefined variable $snack
+#0 C:\xampp0\htdocs\cafe-PUM\app\Views\dashboard.php(124): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp0\\htdoc...', 124)
+#1 C:\xampp0\htdocs\cafe-PUM\system\View\View.php(214): include('C:\\xampp0\\htdoc...')
+#2 C:\xampp0\htdocs\cafe-PUM\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp0\htdocs\cafe-PUM\system\Common.php(1097): CodeIgniter\View\View->render('dashboard', Array, true)
+#4 C:\xampp0\htdocs\cafe-PUM\app\Controllers\Dashboard.php(32): view('dashboard', Array)
+#5 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(824): App\Controllers\Dashboard->dashboard('logout')
+#6 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#7 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp0\htdocs\cafe-PUM\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-10-30 14:40:28 --> Undefined variable $snack
+#0 C:\xampp0\htdocs\cafe-PUM\app\Views\dashboard.php(128): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp0\\htdoc...', 128)
+#1 C:\xampp0\htdocs\cafe-PUM\system\View\View.php(214): include('C:\\xampp0\\htdoc...')
+#2 C:\xampp0\htdocs\cafe-PUM\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp0\htdocs\cafe-PUM\system\Common.php(1097): CodeIgniter\View\View->render('dashboard', Array, true)
+#4 C:\xampp0\htdocs\cafe-PUM\app\Controllers\Dashboard.php(32): view('dashboard', Array)
+#5 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(824): App\Controllers\Dashboard->dashboard('logout')
+#6 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#7 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp0\htdocs\cafe-PUM\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-10-30 14:40:29 --> Undefined variable $snack
+#0 C:\xampp0\htdocs\cafe-PUM\app\Views\dashboard.php(128): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp0\\htdoc...', 128)
+#1 C:\xampp0\htdocs\cafe-PUM\system\View\View.php(214): include('C:\\xampp0\\htdoc...')
+#2 C:\xampp0\htdocs\cafe-PUM\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp0\htdocs\cafe-PUM\system\Common.php(1097): CodeIgniter\View\View->render('dashboard', Array, true)
+#4 C:\xampp0\htdocs\cafe-PUM\app\Controllers\Dashboard.php(32): view('dashboard', Array)
+#5 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(824): App\Controllers\Dashboard->dashboard('logout')
+#6 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#7 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp0\htdocs\cafe-PUM\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-10-30 14:40:29 --> Undefined variable $snack
+#0 C:\xampp0\htdocs\cafe-PUM\app\Views\dashboard.php(128): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp0\\htdoc...', 128)
+#1 C:\xampp0\htdocs\cafe-PUM\system\View\View.php(214): include('C:\\xampp0\\htdoc...')
+#2 C:\xampp0\htdocs\cafe-PUM\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp0\htdocs\cafe-PUM\system\Common.php(1097): CodeIgniter\View\View->render('dashboard', Array, true)
+#4 C:\xampp0\htdocs\cafe-PUM\app\Controllers\Dashboard.php(32): view('dashboard', Array)
+#5 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(824): App\Controllers\Dashboard->dashboard('logout')
+#6 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#7 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp0\htdocs\cafe-PUM\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-10-30 14:40:40 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+#0 C:\xampp0\htdocs\cafe-PUM\system\View\View.php(214): include()
+#1 C:\xampp0\htdocs\cafe-PUM\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp0\htdocs\cafe-PUM\system\Common.php(1097): CodeIgniter\View\View->render('dashboard', Array, true)
+#3 C:\xampp0\htdocs\cafe-PUM\app\Controllers\Dashboard.php(32): view('dashboard', Array)
+#4 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(824): App\Controllers\Dashboard->dashboard('logout')
+#5 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp0\htdocs\cafe-PUM\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-10-30 14:40:42 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+#0 C:\xampp0\htdocs\cafe-PUM\system\View\View.php(214): include()
+#1 C:\xampp0\htdocs\cafe-PUM\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp0\htdocs\cafe-PUM\system\Common.php(1097): CodeIgniter\View\View->render('dashboard', Array, true)
+#3 C:\xampp0\htdocs\cafe-PUM\app\Controllers\Dashboard.php(32): view('dashboard', Array)
+#4 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(824): App\Controllers\Dashboard->dashboard('logout')
+#5 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp0\htdocs\cafe-PUM\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2024-10-30 14:55:36 --> Error connecting to the database: Access denied for user '****'@'10.0.2.2' (using password: NO)
+CRITICAL - 2024-10-30 14:55:36 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'10.0.2.2' (using password: NO)
+#0 C:\xampp0\htdocs\cafe-PUM\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp0\htdocs\cafe-PUM\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp0\htdocs\cafe-PUM\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp0\htdocs\cafe-PUM\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#4 C:\xampp0\htdocs\cafe-PUM\app\Controllers\Dashboard.php(42): CodeIgniter\BaseModel->findAll()
+#5 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(824): App\Controllers\Dashboard->goToMenu()
+#6 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#7 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp0\htdocs\cafe-PUM\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-10-30 15:32:51 --> Maximum execution time of 60 seconds exceeded
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2024-10-30 23:38:44 --> Error connecting to the database: Access denied for user '****'@'10.0.2.2' (using password: NO)
+CRITICAL - 2024-10-30 23:38:44 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'10.0.2.2' (using password: NO)
+#0 C:\xampp0\htdocs\cafe-PUM\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp0\htdocs\cafe-PUM\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp0\htdocs\cafe-PUM\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp0\htdocs\cafe-PUM\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#4 C:\xampp0\htdocs\cafe-PUM\app\Controllers\Dashboard.php(42): CodeIgniter\BaseModel->findAll()
+#5 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(824): App\Controllers\Dashboard->goToMenu()
+#6 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#7 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp0\htdocs\cafe-PUM\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp0\htdocs\cafe-PUM\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp0\\htdoc...')
+#10 {main}
+ERROR - 2024-10-30 23:47:08 --> Error connecting to the database: Access denied for user '****'@'localhost' (using password: YES)
+CRITICAL - 2024-10-30 23:47:08 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+#0 C:\xampp0\htdocs\cafe-PUM\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp0\htdocs\cafe-PUM\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp0\htdocs\cafe-PUM\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp0\htdocs\cafe-PUM\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#4 C:\xampp0\htdocs\cafe-PUM\app\Controllers\Dashboard.php(42): CodeIgniter\BaseModel->findAll()
+#5 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(824): App\Controllers\Dashboard->goToMenu()
+#6 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#7 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp0\htdocs\cafe-PUM\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}

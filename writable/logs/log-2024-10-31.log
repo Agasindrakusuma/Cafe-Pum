@@ -1,0 +1,123 @@
+ERROR - 2024-10-31 00:39:02 --> Error connecting to the database: Access denied for user '****'@'10.0.2.2' (using password: NO)
+CRITICAL - 2024-10-31 00:39:02 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'10.0.2.2' (using password: NO)
+#0 C:\xampp0\htdocs\cafe-PUM\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp0\htdocs\cafe-PUM\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp0\htdocs\cafe-PUM\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp0\htdocs\cafe-PUM\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#4 C:\xampp0\htdocs\cafe-PUM\app\Controllers\Dashboard.php(42): CodeIgniter\BaseModel->findAll()
+#5 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(824): App\Controllers\Dashboard->goToMenu()
+#6 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#7 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp0\htdocs\cafe-PUM\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2024-10-31 00:39:52 --> Error connecting to the database: Access denied for user '****'@'10.0.2.2' (using password: NO)
+CRITICAL - 2024-10-31 00:39:52 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'10.0.2.2' (using password: NO)
+#0 C:\xampp0\htdocs\cafe-PUM\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp0\htdocs\cafe-PUM\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp0\htdocs\cafe-PUM\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp0\htdocs\cafe-PUM\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#4 C:\xampp0\htdocs\cafe-PUM\app\Controllers\Dashboard.php(42): CodeIgniter\BaseModel->findAll()
+#5 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(824): App\Controllers\Dashboard->goToMenu()
+#6 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#7 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp0\htdocs\cafe-PUM\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2024-10-31 00:40:06 --> Error connecting to the database: Access denied for user '****'@'10.0.2.2' (using password: NO)
+CRITICAL - 2024-10-31 00:40:06 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'10.0.2.2' (using password: NO)
+#0 C:\xampp0\htdocs\cafe-PUM\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp0\htdocs\cafe-PUM\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp0\htdocs\cafe-PUM\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp0\htdocs\cafe-PUM\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#4 C:\xampp0\htdocs\cafe-PUM\app\Controllers\Dashboard.php(42): CodeIgniter\BaseModel->findAll()
+#5 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(824): App\Controllers\Dashboard->goToMenu()
+#6 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#7 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp0\htdocs\cafe-PUM\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2024-10-31 00:41:41 --> Error connecting to the database: Access denied for user '****'@'10.0.2.2' (using password: NO)
+CRITICAL - 2024-10-31 00:41:41 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'10.0.2.2' (using password: NO)
+#0 C:\xampp0\htdocs\cafe-PUM\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp0\htdocs\cafe-PUM\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp0\htdocs\cafe-PUM\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp0\htdocs\cafe-PUM\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#4 C:\xampp0\htdocs\cafe-PUM\app\Controllers\Dashboard.php(42): CodeIgniter\BaseModel->findAll()
+#5 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(824): App\Controllers\Dashboard->goToMenu()
+#6 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#7 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp0\htdocs\cafe-PUM\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2024-10-31 00:41:52 --> Error connecting to the database: Access denied for user '****'@'10.0.2.2' (using password: NO)
+CRITICAL - 2024-10-31 00:41:52 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'10.0.2.2' (using password: NO)
+#0 C:\xampp0\htdocs\cafe-PUM\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp0\htdocs\cafe-PUM\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp0\htdocs\cafe-PUM\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp0\htdocs\cafe-PUM\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#4 C:\xampp0\htdocs\cafe-PUM\app\Controllers\Dashboard.php(42): CodeIgniter\BaseModel->findAll()
+#5 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(824): App\Controllers\Dashboard->goToMenu()
+#6 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#7 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp0\htdocs\cafe-PUM\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2024-10-31 00:41:52 --> Error connecting to the database: Access denied for user '****'@'10.0.2.2' (using password: NO)
+CRITICAL - 2024-10-31 00:41:52 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'10.0.2.2' (using password: NO)
+#0 C:\xampp0\htdocs\cafe-PUM\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp0\htdocs\cafe-PUM\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp0\htdocs\cafe-PUM\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp0\htdocs\cafe-PUM\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#4 C:\xampp0\htdocs\cafe-PUM\app\Controllers\Dashboard.php(42): CodeIgniter\BaseModel->findAll()
+#5 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(824): App\Controllers\Dashboard->goToMenu()
+#6 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#7 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp0\htdocs\cafe-PUM\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2024-10-31 00:43:06 --> Error connecting to the database: Access denied for user '****'@'10.0.2.2' (using password: NO)
+CRITICAL - 2024-10-31 00:43:06 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'10.0.2.2' (using password: NO)
+#0 C:\xampp0\htdocs\cafe-PUM\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp0\htdocs\cafe-PUM\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp0\htdocs\cafe-PUM\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp0\htdocs\cafe-PUM\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#4 C:\xampp0\htdocs\cafe-PUM\app\Controllers\Dashboard.php(42): CodeIgniter\BaseModel->findAll()
+#5 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(824): App\Controllers\Dashboard->goToMenu()
+#6 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#7 C:\xampp0\htdocs\cafe-PUM\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp0\htdocs\cafe-PUM\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2024-10-31 00:49:30 --> Error mendapatkan Snap Token: Midtrans API is returning API error. HTTP status code: 401 API response: {"error_messages":["Access denied due to unauthorized transaction, please check client or server key","Visit https://docs.midtrans.com/reference/backend-integration for more details"]}
+ERROR - 2024-10-31 00:49:42 --> Error mendapatkan Snap Token: Midtrans API is returning API error. HTTP status code: 401 API response: {"error_messages":["Access denied due to unauthorized transaction, please check client or server key","Visit https://docs.midtrans.com/reference/backend-integration for more details"]}
+ERROR - 2024-10-31 00:51:12 --> Error mendapatkan Snap Token: Midtrans API is returning API error. HTTP status code: 401 API response: {"error_messages":["Access denied due to unauthorized transaction, please check client or server key","Visit https://docs.midtrans.com/reference/backend-integration for more details"]}
+ERROR - 2024-10-31 01:02:06 --> Error getting Snap Token: Attempt to read property "price" on array
+ERROR - 2024-10-31 01:02:10 --> Error getting Snap Token: Attempt to read property "price" on array
+ERROR - 2024-10-31 01:02:49 --> Error getting Snap Token: Attempt to read property "price" on array
+ERROR - 2024-10-31 01:02:52 --> Error getting Snap Token: Attempt to read property "price" on array
+ERROR - 2024-10-31 01:04:40 --> Error mendapatkan Snap Token: Attempt to read property "quantity" on array
+ERROR - 2024-10-31 01:08:18 --> Error getting Snap Token: Attempt to read property "price" on array
+ERROR - 2024-10-31 01:10:58 --> Error mendapatkan Snap Token: Attempt to read property "harga" on array
+ERROR - 2024-10-31 01:14:12 --> Error mendapatkan Snap Token: Attempt to read property "harga" on array
+ERROR - 2024-10-31 01:15:48 --> Error mendapatkan Snap Token: Attempt to read property "harga" on array
+ERROR - 2024-10-31 01:22:48 --> Error getting Snap Token: Attempt to read property "id" on array
+ERROR - 2024-10-31 01:25:33 --> Error getting Snap Token: Attempt to read property "id" on array
+ERROR - 2024-10-31 01:29:17 --> Error mendapatkan Snap Token: Attempt to read property "quantity" on array
+ERROR - 2024-10-31 01:29:26 --> Error mendapatkan Snap Token: Attempt to read property "quantity" on array
+ERROR - 2024-10-31 01:30:39 --> Error mendapatkan Snap Token: Attempt to read property "quantity" on array
+ERROR - 2024-10-31 01:32:18 --> Error mendapatkan Snap Token: Attempt to read property "quantity" on array
+ERROR - 2024-10-31 01:33:19 --> Error mendapatkan Snap Token: Attempt to read property "quantity" on array
+ERROR - 2024-10-31 01:34:50 --> Error mendapatkan Snap Token: Attempt to read property "quantity" on array
+ERROR - 2024-10-31 01:36:39 --> Error mendapatkan Snap Token: Attempt to read property "quantity" on array
+ERROR - 2024-10-31 01:36:51 --> Error mendapatkan Snap Token: Attempt to read property "quantity" on array
+ERROR - 2024-10-31 01:40:12 --> Error mendapatkan Snap Token: Attempt to read property "quantity" on array
+ERROR - 2024-10-31 01:43:28 --> Error mendapatkan Snap Token: Attempt to read property "quantity" on array
+ERROR - 2024-10-31 01:48:10 --> Error mendapatkan Snap Token: Attempt to read property "harga" on array
+ERROR - 2024-10-31 01:50:34 --> Error mendapatkan Snap Token: Attempt to read property "harga" on array
+ERROR - 2024-10-31 01:50:56 --> Error mendapatkan Snap Token: Midtrans API is returning API error. HTTP status code: 400 API response: {"error_messages":["transaction_details.gross_amount must be greater than or equal to 0.01"]}
+ERROR - 2024-10-31 01:52:12 --> Error mendapatkan Snap Token: Attempt to read property "harga" on array
+ERROR - 2024-10-31 01:55:53 --> Error getting Snap Token: Attempt to read property "harga" on array
+ERROR - 2024-10-31 01:58:52 --> Error getting Snap Token: Incomplete item data in pesanan
+ERROR - 2024-10-31 02:00:15 --> Error getting Snap Token: Item in pesanan is missing harga or jumlah
+ERROR - 2024-10-31 02:04:33 --> Error obtaining Snap Token in getSnapToken: Item in pesanan missing 'harga' or 'jumlah'.

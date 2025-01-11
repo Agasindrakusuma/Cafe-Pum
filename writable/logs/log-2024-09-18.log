@@ -1,0 +1,14 @@
+CRITICAL - 2024-09-18 18:09:41 --> The framework needs the following extension(s) installed and loaded: intl.
+#0 C:\xampp2\htdocs\cafe-PUM\system\CodeIgniter.php(219): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 C:\xampp2\htdocs\cafe-PUM\system\CodeIgniter.php(177): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 C:\xampp2\htdocs\cafe-PUM\system\bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
+#3 C:\xampp2\htdocs\cafe-PUM\index.php(28): require('C:\\xampp2\\htdoc...')
+#4 {main}
+CRITICAL - 2024-09-18 11:35:57 --> file_get_contents(): read of 8192 bytes failed with errno=13 Permission denied
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'file_get_conten...', 'C:\\xampp2\\htdoc...', 460, Array)
+#1 C:\xampp2\htdocs\cafe-PUM\system\Debug\Toolbar.php(460): file_get_contents('C:\\xampp2\\htdoc...')
+#2 C:\xampp2\htdocs\cafe-PUM\app\Config\Events.php(48): CodeIgniter\Debug\Toolbar->respond()
+#3 C:\xampp2\htdocs\cafe-PUM\system\Events\Events.php(149): CodeIgniter\Events\Events::Config\{closure}()
+#4 C:\xampp2\htdocs\cafe-PUM\system\CodeIgniter.php(300): CodeIgniter\Events\Events::trigger('pre_system')
+#5 C:\xampp2\htdocs\cafe-PUM\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
