@@ -31,31 +31,11 @@ class Database extends Config
      * @var array
      */
 
-    // public $default = [
-    //     'DSN'      => '172.18.0.3',
-    //     'hostname' => 'localhost',
-    //     'username' => 'root',
-    //     'password' => '123',
-    //     'database' => 'pum',
-    //     'DBDriver' => 'MySQLi',
-    //     'DBPrefix' => '',
-    //     'pConnect' => false,
-    //     'DBDebug'  => (ENVIRONMENT !== 'production'),
-    //     'charset'  => 'utf8',
-    //     'DBCollat' => 'utf8_general_ci',
-    //     'swapPre'  => '',
-    //     'encrypt'  => false,
-    //     'compress' => false,
-    //     'strictOn' => false,
-    //     'failover' => [],
-    //     'port'     => 3306,
-    // ];
-
     public $default = [
-        'DSN'      => '',
+        'DSN'      => '172.18.0.3',
         'hostname' => 'localhost',
         'username' => 'root',
-        'password' => '',
+        'password' => '123',
         'database' => 'pum',
         'DBDriver' => 'MySQLi',
         'DBPrefix' => '',
@@ -70,6 +50,26 @@ class Database extends Config
         'failover' => [],
         'port'     => 3306,
     ];
+
+    // public $default = [
+    //     'DSN'      => '',
+    //     'hostname' => 'localhost',
+    //     'username' => 'root',
+    //     'password' => '',
+    //     'database' => 'pum',
+    //     'DBDriver' => 'MySQLi',
+    //     'DBPrefix' => '',
+    //     'pConnect' => false,
+    //     'DBDebug'  => (ENVIRONMENT !== 'production'),
+    //     'charset'  => 'utf8',
+    //     'DBCollat' => 'utf8_general_ci',
+    //     'swapPre'  => '',
+    //     'encrypt'  => false,
+    //     'compress' => false,
+    //     'strictOn' => false,
+    //     'failover' => [],
+    //     'port'     => 3306,
+    // ];
 
     /**
      * This database connection is used when

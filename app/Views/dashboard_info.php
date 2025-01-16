@@ -53,7 +53,7 @@
     </nav> -->
     <!-- Masthead-->
 
-    <header class="masthead" style="background-image: url('<?= base_url('public/images/header-bg.jpg') ?>');">
+    <header class="masthead" style="background-image: url('<?= base_url('public/images/t.jpg') ?>');">
         <div class="container" style="position: relative;">
             <!-- Konten utama di tengah -->
             <div class="masthead-subheading">Selamat Berbelanja</div>
@@ -150,10 +150,7 @@
             </div>
         </div>
     </section>
-    <div class="container-fluid page-body-wrapper">
-        <!-- partial -->
-        <div class="main-panel" style="margin-left: auto; margin-right:auto;">
-
+    
 
             <!-- Modal -->
 
@@ -311,27 +308,12 @@
             </div>
         </div>
     </section>
-    <!-- Clients-->
+     Clients-->
 
     <!-- Contact-->
 
     <!-- Footer-->
-    <footer class="footer py-4">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-4 text-lg-start">Copyright &copy; Your Website 2023</div>
-                <div class="col-lg-4 my-3 my-lg-0">
-                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-                <div class="col-lg-4 text-lg-end">
-                    <a class="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a>
-                    <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
-                </div>
-            </div>
-        </div>
-    </footer> -->
+
     <!-- Portfolio Modals-->
     <!-- Portfolio item 1 modal popup-->
     <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">

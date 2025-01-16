@@ -8,16 +8,20 @@ use App\Models\TransaksiModel;
 
 class Antrian extends BaseController
 {
-    public $menuModel;
+    public $data;
+    public $harga;
     public $antrianModel;
     public $transaksiModel;
-    public $userModel;
+    public $menuModel;
+    public $pembelianModel;
+
     public function __construct()
     {
         $this->menuModel = new MenuModel();
         $this->antrianModel = new AntrianModel();
         $this->transaksiModel = new TransaksiModel();
     }
+
     public function index()
     {
         if (!session()->get('nama')) {
@@ -56,14 +60,31 @@ class Antrian extends BaseController
 
     public function rincianPesanan()
     {
-        $idAntian = $this->request->getPost("idAntrian");
+        $idAntrian = $this->request->getPost("idAntrian");
+        log_message('debug', 'ID Antrian: ' . $idAntrian); // Log ID Antrian
 
-        $pesanan = $this->transaksiModel->where("idAntrian", $idAntian)->findAll();
+        // Ambil data pesanan berdasarkan idAntrian
+        $pesanan = $this->transaksiModel->where("idAntrian", $idAntrian)->findAll();
+        log_message('debug', 'Data Pesanan: ' . print_r($pesanan, true)); // Log Data Pesanan
+
+        if (empty($pesanan)) {
+            echo json_encode([]);
+            return;
+        }
+
+        // Ambil data menu untuk setiap pesanan
         for ($i = 0; $i < count($pesanan); $i++) {
             $menu = $this->menuModel->where("id", $pesanan[$i]["idMenu"])->first();
-            $pesanan[$i]["nama"] = $menu["nama"];
-            $pesanan[$i]["harga"] = $menu["harga"];
+            if ($menu) {
+                $pesanan[$i]["nama"] = $menu["nama"];
+                $pesanan[$i]["harga"] = $menu["harga"];
+            } else {
+                $pesanan[$i]["nama"] = "Menu tidak ditemukan";
+                $pesanan[$i]["harga"] = 0;
+            }
         }
+
+        log_message('debug', 'Data Pesanan dengan Menu: ' . print_r($pesanan, true)); // Log Data Pesanan dengan Menu
         echo json_encode($pesanan);
     }
     public function simpanAntrian()

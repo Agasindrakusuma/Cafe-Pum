@@ -5,16 +5,19 @@ namespace App\Controllers;
 use Midtrans;
 use App\Models\AntrianModel;
 use App\Models\TransaksiModel;
+use App\Models\MenuModel;
 
 class Payment extends BaseController
 {
     public $antrianModel;
     public $transaksiModel;
+    public $menuModel;
 
     public function __construct()
     {
         $this->antrianModel = new AntrianModel();
         $this->transaksiModel = new TransaksiModel();
+        $this->menuModel = new MenuModel();
     }
 
     public function getSnapToken()
@@ -67,28 +70,31 @@ class Payment extends BaseController
     }
 
     public function handleTransactionCallback()
-    {
-        try {
-            $json = $this->request->getJSON();
+{
+    try {
+        $json = $this->request->getJSON();
 
-            if ($json && isset($json->transaction_status) && isset($json->order_id)) {
-                $order_id = $json->order_id;
-                $status = $json->transaction_status;
+        if ($json && isset($json->transaction_status) && isset($json->order_id)) {
+            $order_id = $json->order_id;
+            $status = $json->transaction_status;
 
-                if ($status == 'settlement') {
-                    $antrianData = [
-                        'nama' => $json->customer_details->first_name,
-                        'noMeja' => $json->customer_details->table_number,
-                        'tanggal' => date('Y-m-d H:i:s'),
-                        'status' => 0,
-                        'idUser' => null,
-                    ];
+            if ($status == 'settlement') {
+                // Simpan data antrian
+                $antrianData = [
+                    'nama' => $json->customer_details->first_name,
+                    'noMeja' => $json->customer_details->table_number,
+                    'tanggal' => date('Y-m-d H:i:s'),
+                    'status' => 0, // Status awal: menunggu diproses
+                    'idUser' => session()->get('id') ?? null, // Jika ada user yang login, sesuaikan
+                    'order_id' => $order_id, // Simpan order_id dari Midtrans
+                ];
 
-                    // Simpan ke antrian
-                    $this->antrianModel->save($antrianData);
-                    $idAntrian = $this->antrianModel->insertID();
+                // Simpan ke tabel antrian
+                $this->antrianModel->save($antrianData);
+                $idAntrian = $this->antrianModel->insertID(); // Ambil ID antrian yang baru disimpan
 
-                    // Simpan detail transaksi
+                // Simpan detail transaksi (pesanan)
+                if (isset($json->item_details) && is_array($json->item_details)) {
                     foreach ($json->item_details as $item) {
                         $transaksiData = [
                             'idMenu' => $item->id,
@@ -97,19 +103,22 @@ class Payment extends BaseController
                         ];
                         $this->transaksiModel->insert($transaksiData);
                     }
-
-                    return $this->response->setStatusCode(200)->setJSON(['message' => 'Pesanan berhasil diproses ke antrian']);
                 } else {
-                    return $this->response->setStatusCode(200)->setJSON(['message' => 'Pembayaran belum selesai atau tidak berhasil']);
+                    log_message('error', 'Item details tidak valid atau kosong.');
                 }
-            }
 
-            return $this->response->setStatusCode(400)->setJSON(['error' => 'Data callback tidak valid']);
-        } catch (\Exception $e) {
-            log_message('error', 'Error callback: ' . $e->getMessage());
-            return $this->response->setStatusCode(500)->setJSON(['error' => 'Gagal memproses callback']);
+                return $this->response->setStatusCode(200)->setJSON(['message' => 'Pesanan berhasil diproses ke antrian']);
+            } else {
+                return $this->response->setStatusCode(200)->setJSON(['message' => 'Pembayaran belum selesai atau tidak berhasil']);
+            }
         }
+
+        return $this->response->setStatusCode(400)->setJSON(['error' => 'Data callback tidak valid']);
+    } catch (\Exception $e) {
+        log_message('error', 'Error callback: ' . $e->getMessage());
+        return $this->response->setStatusCode(500)->setJSON(['error' => 'Gagal memproses callback']);
     }
+}
 
     private function setMidtransConfig()
     {

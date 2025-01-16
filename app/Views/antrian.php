@@ -91,8 +91,21 @@
                             <th>Total</th>
                         </tr>
                     </thead>
-                    <tbody id="tabelRincian">
-                        <td colspan="5">Memuat data....</td>
+                    <tbody>
+                        <?php if (!empty($pesanan)) : ?>
+                            <?php foreach ($pesanan as $item) : ?>
+                                <tr>
+                                    <td><?= esc($item['nama']); ?></td>
+                                    <td><?= esc($item['jumlah']); ?></td>
+                                    <td><?= esc(number_format($item['harga'], 0, ',', '.')); ?></td>
+                                    <td><?= esc(number_format($item['total'], 0, ',', '.')); ?></td>
+                                </tr>
+                            <?php endforeach; ?>
+                        <?php else : ?>
+                            <tr>
+                                <td colspan="4">Pesanan Kosong :)</td>
+                            </tr>
+                        <?php endif; ?>
                     </tbody>
                 </table>
                 <div class="row">
@@ -152,6 +165,7 @@
         });
     }
 
+    // Menampilkan daftar antrian yang selesai
     function tampilkanAntrianSelesai() {
         var isiPesanan = ""
         $.ajax({
@@ -171,6 +185,7 @@
         });
     }
 
+    // Modal untuk melihat rincian pesanan
     function modalRincian(id, nama, noMeja, status) {
         $("#nama").val(nama)
         $("#noMeja").val(noMeja)
@@ -191,6 +206,7 @@
         $("#modalRincian").modal("show")
     }
 
+    // Proses perubahan status pesanan
     function proses() {
         var id = $("#idTransaksi").val()
         var status = $("#statusTransaksi").val()
@@ -208,26 +224,30 @@
         });
     }
 
+    // Menampilkan rincian pesanan
     function tampilkanRincian(id) {
-        var isiPesanan = ""
-        var totalHarga = 0
+        var isiPesanan = "";
+        var totalHarga = 0;
         $.ajax({
             url: '<?= base_url() ?>/antrian/rincianPesanan',
             method: 'post',
             data: "idAntrian=" + id,
             dataType: 'json',
             success: function(data) {
+                console.log(data); // Log data yang diterima dari server
                 if (data.length) {
                     for (let i = 0; i < data.length; i++) {
-                        totalHarga += data[i].harga * data[i].jumlah
-                        isiPesanan += "<tr><td>" + data[i].nama + "</td><td>" + data[i].jumlah + "</td><td>" + formatRupiah(data[i].harga.toString()) + "</td><td>" + formatRupiah((data[i].harga * data[i].jumlah).toString()) + "</td></tr>"
+                        totalHarga += data[i].harga * data[i].jumlah;
+                        isiPesanan += "<tr><td>" + data[i].nama + "</td><td>" + data[i].jumlah + "</td><td>" + formatRupiah(data[i].harga.toString()) + "</td><td>" + formatRupiah((data[i].harga * data[i].jumlah).toString()) + "</td></tr>";
                     }
                 } else {
-                    isiPesanan = "<td colspan='4'>Antrian Masih Kosong :)</td>"
+                    isiPesanan = "<tr><td colspan='4'>Pesanan Kosong :)</td></tr>";
                 }
-                $("#tabelRincian").html(isiPesanan)
-                $("#totalHarga").val(formatRupiah(totalHarga.toString()))
-
+                $("#tabelRincian").html(isiPesanan);
+                $("#totalHarga").val(formatRupiah(totalHarga.toString()));
+            },
+            error: function() {
+                console.error("Gagal memuat rincian pesanan.");
             }
         });
     }
@@ -236,6 +256,7 @@
         $("#modalRincian").modal("hide")
     }
 
+    // Format harga ke dalam format Rupiah
     function formatRupiah(angka, prefix) {
         var number_string = angka.replace(/[^,\d]/g, '').toString(),
             split = number_string.split(','),
@@ -253,4 +274,5 @@
         return prefix == undefined ? rupiah : (rupiah ? 'Rp. ' + rupiah : '');
     }
 </script>
+
 <?php $this->endSection() ?>
